@@ -8,7 +8,7 @@ from docx.shared import Pt
 from supabase import create_client
 
 BASE = Path(__file__).parent
-with open(BASE / "data" / "modulos.json", encoding="utf-8") as f:
+with open(BASE / "modulos.json", encoding="utf-8") as f:
     MODULES = json.load(f)
 
 st.set_page_config(page_title="Project Builder | Desarrollo de Emprendedores", page_icon="🚀", layout="wide")
