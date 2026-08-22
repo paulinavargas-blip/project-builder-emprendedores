@@ -1,102 +1,50 @@
-# Project Builder – Desarrollo de Emprendedores | WEB v1
+# Project Builder – Desarrollo de Emprendedores | MULTI v1
 
-Esta versión está pensada para publicarse una sola vez en Internet y compartirse mediante una liga en Blackboard.
+Arquitectura para una administradora que también puede ser profesora, tres profesores adicionales, grupos, 5–6 equipos por profesor y un proyecto por equipo.
 
-## Arquitectura
+## Roles
 
-- Interfaz: Streamlit
-- Base de datos: Supabase
-- Despliegue sugerido: Streamlit Community Cloud
-- Código: GitHub
-- Acceso del alumno: navegador web, sin instalar Python
+**Administradora + Profesora:** alterna entre `Panel administrador` y `Mis grupos`.
 
-## Cómo funciona para el alumno
+**Profesor:** ve solo sus grupos, crea equipos/proyectos, consulta avance y puede restablecer PIN de equipo.
 
-1. Entra a la liga del Project Builder.
-2. Crea su proyecto con:
-   - código único de equipo
-   - nombre del proyecto
-   - PIN
-3. Trabaja los módulos.
-4. Pulsa Guardar.
-5. Otro día vuelve a la misma liga, captura código + PIN y recupera su avance.
-6. Puede descargar el Plan de Negocios acumulado en Word.
+**Equipo:** entra con código único + PIN, trabaja el Builder, guarda en línea y descarga su Plan de Negocios.
 
-## Archivos principales
+## Base de datos
 
-- `streamlit_app.py`: aplicación web.
-- `data/modulos.json`: contenido académico del curso.
-- `sql/01_crear_base_de_datos.sql`: crea la tabla de proyectos.
-- `.streamlit/secrets.toml.example`: ejemplo de secretos.
-- `requirements.txt`: dependencias para el servidor.
+`app_users → groups → teams → projects`
 
-## PASO 1 — Crear Supabase
+## Antes de publicar
 
-1. Crear un proyecto en Supabase.
-2. Abrir SQL Editor.
-3. Copiar y ejecutar `sql/01_crear_base_de_datos.sql`.
-4. En Project Settings > API copiar:
-   - Project URL
-   - service_role key
+Como la tabla actual todavía no contiene proyectos reales, ejecutar en Supabase SQL Editor:
 
-IMPORTANTE: la service_role key es secreta. Nunca debe subirse a GitHub.
+`sql/01_REEMPLAZAR_ESQUEMA_MULTI.sql`
 
-## PASO 2 — Subir el código a GitHub
+## Secrets en Streamlit
 
-Crear un repositorio y subir esta carpeta.
-Puede ser privado.
-
-No subir un archivo real `.streamlit/secrets.toml`.
-El `.gitignore` ya lo excluye.
-
-## PASO 3 — Publicar en Streamlit Community Cloud
-
-1. Entrar a Streamlit Community Cloud con GitHub.
-2. Crear una app nueva desde el repositorio.
-3. Indicar como archivo principal:
-   `streamlit_app.py`
-4. Abrir Advanced settings / Secrets.
-5. Agregar:
-
+```toml
 SUPABASE_URL = "..."
 SUPABASE_SERVICE_KEY = "..."
+INITIAL_ADMIN_NAME = "..."
+INITIAL_ADMIN_EMAIL = "..."
+INITIAL_ADMIN_PASSWORD = "..."
+```
 
-6. Publicar.
+Cuando `app_users` está vacío, la aplicación crea automáticamente la primera cuenta con `is_admin=true` e `is_teacher=true`.
 
-Al finalizar, Streamlit genera una URL `*.streamlit.app`.
+## Flujo de configuración
 
-## PASO 4 — Blackboard
+1. Ejecutar el nuevo SQL en Supabase.
+2. Reemplazar los archivos del repositorio GitHub con esta versión.
+3. Configurar Secrets en Streamlit.
+4. Publicar una sola app.
+5. Iniciar sesión como administradora/profesora.
+6. Crear a los otros 3 profesores.
+7. Crear y asignar grupos.
+8. Cada profesor crea sus 5–6 equipos.
+9. Entregar código + PIN a cada equipo.
+10. Publicar una sola URL en Blackboard.
 
-Agregar en Blackboard un enlace web con un nombre como:
+## Seguridad
 
-**Project Builder – Desarrollo de Emprendedores**
-
-Los alumnos solo necesitarán abrir la liga.
-
-## Seguridad de acceso
-
-Cada proyecto utiliza:
-- código único de equipo
-- PIN
-- hash PBKDF2 con salt individual
-
-El PIN no se almacena en texto visible.
-
-## Recomendación operativa
-
-Antes de liberar la liga:
-- crear 2 o 3 proyectos de prueba;
-- probar guardar/cerrar/volver a entrar;
-- probar dos navegadores distintos;
-- generar el Word final;
-- confirmar que los costos de Mercadotecnia, Operaciones, Talento y Legal se integran correctamente con Finanzas.
-
-## Futuras mejoras posibles
-
-- panel de profesora/administradora;
-- restablecimiento de PIN;
-- carga de anexos/evidencias;
-- rúbricas y semáforo de calidad;
-- historial de versiones;
-- exportación final con portada institucional;
-- acceso mediante correo institucional.
+Contraseñas y PIN se almacenan como PBKDF2 + salt. La clave privada de Supabase nunca debe subirse a GitHub. RLS queda activado y la aplicación accede desde el servidor usando `SUPABASE_SERVICE_KEY`.
