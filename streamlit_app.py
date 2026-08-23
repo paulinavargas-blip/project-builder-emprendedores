@@ -200,6 +200,22 @@ if st.session_state.auth_type=="staff":
                 for tm in rows("teams",group_id=g["id"]):
                     p=one("projects",team_id=tm["id"]); payload=(p or {}).get("payload") or {"modulos":{}}; v=global_pct(payload); c1,c2,c3=st.columns([3,2,1]); c1.write(f"**{tm['team_code']} · {tm['team_name']}**"); c1.caption(p["project_name"] if p else "Sin proyecto"); c2.progress(v/100); c2.caption(f"{v}% · {(p or {}).get('updated_at','')}")
                     if c3.button("Nuevo PIN",key=f"pinreset_{tm['id']}"): st.success(f"Nuevo PIN: {reset_team_pin(tm['id'])}")
+        with st.expander("👁️ Ver proyecto"):
+            st.write(f"**Proyecto:** {p['project_name'] if p else 'Sin proyecto'}")
+            st.write(f"**Avance global:** {v}%")
+            st.progress(v / 100)
+
+            for m in MODULES:
+                st.markdown(f"### {m['numero']} · {m['titulo']} — {module_pct(m, payload)}%")
+                md_view = payload.get("modulos", {}).get(m["id"], {})
+
+                for f in all_fields(m):
+                    valor = md_view.get(f["clave"], "")
+                    if valor:
+                        st.markdown(f"**{f['etiqueta']}**")
+                        st.write(valor)
+                    else:
+                        st.caption(f"{f['etiqueta']}: sin información capturada")                        
         st.stop()
 
 # TEAM AREA
