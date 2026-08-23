@@ -113,19 +113,40 @@ def signed_url(path,expires=3600):
     except Exception: return None
 def download_storage(path): return db.storage.from_(BUCKET).download(path)
 
-def render_evidence_list(pid,mid,allow_delete=False,key_prefix="ev"):
-    evs=list_evidences(pid,mid)
-    if not evs: st.caption("Aún no hay evidencias cargadas en este módulo."); return
+def render_evidence_list(pid, mid, allow_delete=False, key_prefix="ev"):
+    evs = list_evidences(pid, mid)
+
+    if not evs:
+        st.caption("Aún no hay evidencias cargadas en este módulo.")
+        return
+
     for ev in evs:
-        c1,c2=st.columns([5,1])
-        if ev["kind"]=="link": c1.markdown(f"🔗 **{ev['slot_label']}** — {ev.get('external_url','')}")
+        c1, c2 = st.columns([5, 1])
+
+        if ev["kind"] == "link":
+            c1.markdown(
+                f"🔗 **{ev['slot_label']}** — {ev.get('external_url', '')}"
+            )
         else:
-            u=signed_url(ev.get("storage_path")); label=ev.get("file_name") or ev["slot_label"]
-           if u:
-               c1.markdown(f"📎 **{ev['slot_label']}** — [{label}]({u})")
-           else:
-               c1.write(f"📎 **{ev['slot_label']}** — {label}")
-        if allow_delete and c2.button("Eliminar",key=f"{key_prefix}_{ev['id']}"): delete_evidence(ev); st.rerun()
+            u = signed_url(ev.get("storage_path"))
+            label = ev.get("file_name") or ev["slot_label"]
+
+            if u:
+                c1.markdown(
+                    f"📎 **{ev['slot_label']}** — [{label}]({u})"
+                )
+            else:
+                c1.write(
+                    f"📎 **{ev['slot_label']}** — {label}"
+                )
+
+        if allow_delete:
+            if c2.button(
+                "Eliminar",
+                key=f"{key_prefix}_{ev['id']}"
+            ):
+                delete_evidence(ev)
+                st.rerun()
 
 def render_evidence_uploader(pid,m):
     if not m.get("evidence_slots"): return
