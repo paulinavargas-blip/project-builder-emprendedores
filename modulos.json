@@ -24,7 +24,9 @@
             "clave": "empresa",
             "etiqueta": "Redacción ejecutiva de la empresa",
             "ayuda": "Debe permitir comprender rápidamente el negocio.",
-            "tipo": "textarea"
+            "tipo": "textarea",
+            "words_min": 120,
+            "words_max": 300
           }
         ]
       },
@@ -39,7 +41,9 @@
             "clave": "nombre",
             "etiqueta": "Nombre y explicación",
             "ayuda": "",
-            "tipo": "textarea"
+            "tipo": "textarea",
+            "words_min": 80,
+            "words_max": 180
           }
         ]
       },
@@ -54,13 +58,17 @@
             "clave": "tipo",
             "etiqueta": "Tipo de proyecto (producto / servicio / APP)",
             "ayuda": "",
-            "tipo": "textarea"
+            "tipo": "textarea",
+            "words_min": 80,
+            "words_max": 180
           },
           {
             "clave": "solucion",
             "etiqueta": "Descripción detallada de la solución",
             "ayuda": "",
-            "tipo": "textarea"
+            "tipo": "textarea",
+            "words_min": 120,
+            "words_max": 300
           }
         ]
       },
@@ -75,7 +83,9 @@
             "clave": "emprendedores",
             "etiqueta": "Presentación de los integrantes",
             "ayuda": "",
-            "tipo": "textarea"
+            "tipo": "textarea",
+            "words_min": 120,
+            "words_max": 300
           }
         ]
       },
@@ -92,7 +102,9 @@
             "clave": "ubicacion",
             "etiqueta": "Ubicación propuesta y justificación",
             "ayuda": "",
-            "tipo": "textarea"
+            "tipo": "textarea",
+            "words_min": 120,
+            "words_max": 300
           }
         ]
       },
@@ -108,13 +120,17 @@
             "clave": "marco",
             "etiqueta": "Marco teórico referenciado",
             "ayuda": "",
-            "tipo": "textarea"
+            "tipo": "textarea",
+            "words_min": 200,
+            "words_max": 400
           },
           {
             "clave": "referencias",
             "etiqueta": "Referencias utilizadas",
             "ayuda": "",
-            "tipo": "textarea"
+            "tipo": "textarea",
+            "words_min": 120,
+            "words_max": 300
           }
         ]
       },
@@ -129,7 +145,9 @@
             "clave": "justificacion",
             "etiqueta": "Justificación basada en evidencia",
             "ayuda": "",
-            "tipo": "textarea"
+            "tipo": "textarea",
+            "words_min": 200,
+            "words_max": 400
           }
         ]
       },
@@ -144,13 +162,17 @@
             "clave": "ods",
             "etiqueta": "ODS principal y alineación",
             "ayuda": "",
-            "tipo": "textarea"
+            "tipo": "textarea",
+            "words_min": 120,
+            "words_max": 300
           },
           {
             "clave": "impacto",
             "etiqueta": "Acción concreta → beneficiario → resultado esperado → ODS",
             "ayuda": "",
-            "tipo": "textarea"
+            "tipo": "textarea",
+            "words_min": 120,
+            "words_max": 300
           }
         ]
       }
@@ -179,7 +201,54 @@
       "Justificación basada en evidencia",
       "ODS conectado con acciones reales",
       "CV de emprendedores preparado como anexo"
-    ]
+    ],
+    "evidence_slots": [
+      {
+        "id": "canvas",
+        "label": "Business Model Canvas",
+        "description": "Canvas seleccionado/validado como evidencia de base del modelo.",
+        "types": [
+          "image",
+          "pdf",
+          "link"
+        ],
+        "embed_images": true
+      },
+      {
+        "id": "prototipo",
+        "label": "Prototipo del producto/servicio/APP",
+        "description": "Fotografía, mockup o representación del prototipo.",
+        "types": [
+          "image",
+          "pdf",
+          "link"
+        ],
+        "embed_images": true
+      },
+      {
+        "id": "ubicacion",
+        "label": "Ubicación / Google Maps",
+        "description": "Captura o evidencia visual de la ubicación propuesta.",
+        "types": [
+          "image",
+          "pdf",
+          "link"
+        ],
+        "embed_images": true
+      },
+      {
+        "id": "ods",
+        "label": "Alineación visual con ODS",
+        "description": "Evidencia visual opcional de la relación modelo–acción–beneficiario–resultado–ODS.",
+        "types": [
+          "image",
+          "pdf",
+          "link"
+        ],
+        "embed_images": true
+      }
+    ],
+    "evidence_note": "La evidencia visual complementa el análisis; no sustituye la argumentación solicitada."
   },
   {
     "id": "planeacion",
@@ -205,7 +274,9 @@
             "clave": "mision",
             "etiqueta": "Misión",
             "ayuda": "",
-            "tipo": "textarea"
+            "tipo": "textarea",
+            "words_min": 80,
+            "words_max": 180
           }
         ]
       },
@@ -220,7 +291,9 @@
             "clave": "vision",
             "etiqueta": "Visión",
             "ayuda": "",
-            "tipo": "textarea"
+            "tipo": "textarea",
+            "words_min": 80,
+            "words_max": 180
           }
         ]
       },
@@ -235,7 +308,9 @@
             "clave": "valores",
             "etiqueta": "Valores + aplicación",
             "ayuda": "",
-            "tipo": "textarea"
+            "tipo": "textarea",
+            "words_min": 80,
+            "words_max": 180
           }
         ]
       },
@@ -250,19 +325,25 @@
             "clave": "obj_corto",
             "etiqueta": "5 objetivos SMART de corto plazo",
             "ayuda": "",
-            "tipo": "textarea"
+            "tipo": "textarea",
+            "words_min": 120,
+            "words_max": 300
           },
           {
             "clave": "obj_mediano",
             "etiqueta": "3 objetivos SMART de mediano plazo",
             "ayuda": "",
-            "tipo": "textarea"
+            "tipo": "textarea",
+            "words_min": 120,
+            "words_max": 300
           },
           {
             "clave": "obj_largo",
             "etiqueta": "3 objetivos SMART de largo plazo",
             "ayuda": "",
-            "tipo": "textarea"
+            "tipo": "textarea",
+            "words_min": 120,
+            "words_max": 300
           }
         ]
       },
@@ -277,13 +358,17 @@
             "clave": "sector",
             "etiqueta": "Análisis sectorial + implicaciones",
             "ayuda": "",
-            "tipo": "textarea"
+            "tipo": "textarea",
+            "words_min": 200,
+            "words_max": 400
           },
           {
             "clave": "fuentes_sector",
             "etiqueta": "Fuentes del análisis sectorial",
             "ayuda": "",
-            "tipo": "textarea"
+            "tipo": "textarea",
+            "words_min": 80,
+            "words_max": 180
           }
         ]
       },
@@ -298,13 +383,77 @@
             "clave": "trends",
             "etiqueta": "Hallazgos de Google Trends e implicaciones",
             "ayuda": "",
-            "tipo": "textarea"
+            "tipo": "textarea",
+            "words_min": 120,
+            "words_max": 300
           },
           {
             "clave": "fuentes_trends",
             "etiqueta": "Fuente y fecha de consulta",
             "ayuda": "",
-            "tipo": "textarea"
+            "tipo": "textarea",
+            "words_min": 80,
+            "words_max": 180
+          }
+        ]
+      },
+      {
+        "titulo": "3.A · Actividad previa integrada: Sondeo Digital con Google Forms + IA",
+        "instructions": [
+          "Esta actividad forma parte del Módulo 3 y posteriormente será recuperada formalmente en el Plan de Mercadotecnia.",
+          "Define el objetivo y diseña un máximo de 10 preguntas estratégicas.",
+          "Aplica el instrumento a una muestra de 25 a 50 personas coherentes con el mercado objetivo.",
+          "Analiza patrones, tendencias e insights; la interpretación final debe ser realizada por el equipo.",
+          "Concluye qué se validó o invalidó, qué ajustes requiere el modelo y qué decisiones estratégicas se derivan."
+        ],
+        "fields": [
+          {
+            "clave": "sondeo_objetivo",
+            "etiqueta": "Objetivo del sondeo",
+            "tipo": "textarea",
+            "ayuda": "Indica qué se investigó, en quién y con qué finalidad.",
+            "words_min": 120,
+            "words_max": 300
+          },
+          {
+            "clave": "sondeo_preguntas",
+            "etiqueta": "Diseño del instrumento (máximo 10 preguntas)",
+            "tipo": "textarea",
+            "ayuda": "Incluye preguntas cerradas y abiertas estratégicamente alineadas al proyecto.",
+            "words_min": 120,
+            "words_max": 300
+          },
+          {
+            "clave": "sondeo_muestra",
+            "etiqueta": "Muestra obtenida y características",
+            "tipo": "textarea",
+            "ayuda": "Describe tamaño, perfil y coherencia con el mercado objetivo.",
+            "words_min": 120,
+            "words_max": 300
+          },
+          {
+            "clave": "sondeo_resultados",
+            "etiqueta": "Resultados, patrones e insights",
+            "tipo": "textarea",
+            "ayuda": "Interpreta los datos; no te limites a describir porcentajes.",
+            "words_min": 200,
+            "words_max": 400
+          },
+          {
+            "clave": "sondeo_decisiones",
+            "etiqueta": "Validación, ajustes y decisiones estratégicas",
+            "tipo": "textarea",
+            "ayuda": "Explica qué se validó/invalidó y qué cambia en el proyecto.",
+            "words_min": 200,
+            "words_max": 400
+          },
+          {
+            "clave": "sondeo_link",
+            "etiqueta": "Enlace del Google Form aplicado",
+            "tipo": "textarea",
+            "ayuda": "Pega la liga del formulario aplicado.",
+            "words_min": 80,
+            "words_max": 180
           }
         ]
       },
@@ -320,13 +469,17 @@
             "clave": "benchmark",
             "etiqueta": "Benchmarking de 3 competidores",
             "ayuda": "",
-            "tipo": "textarea"
+            "tipo": "textarea",
+            "words_min": 200,
+            "words_max": 400
           },
           {
             "clave": "oportunidad_comp",
             "etiqueta": "Oportunidad de diferenciación",
             "ayuda": "",
-            "tipo": "textarea"
+            "tipo": "textarea",
+            "words_min": 120,
+            "words_max": 300
           }
         ]
       },
@@ -341,13 +494,17 @@
             "clave": "pestel",
             "etiqueta": "PESTEL referenciado",
             "ayuda": "",
-            "tipo": "textarea"
+            "tipo": "textarea",
+            "words_min": 200,
+            "words_max": 400
           },
           {
             "clave": "fuentes_pestel",
             "etiqueta": "Fuentes PESTEL",
             "ayuda": "",
-            "tipo": "textarea"
+            "tipo": "textarea",
+            "words_min": 80,
+            "words_max": 180
           }
         ]
       },
@@ -362,7 +519,9 @@
             "clave": "foda",
             "etiqueta": "Matriz FODA 5×5×5×5",
             "ayuda": "",
-            "tipo": "textarea"
+            "tipo": "textarea",
+            "words_min": 120,
+            "words_max": 300
           }
         ]
       },
@@ -377,7 +536,9 @@
             "clave": "estrategias",
             "etiqueta": "Mínimo 4 estrategias FO–DO–FA–DA",
             "ayuda": "",
-            "tipo": "textarea"
+            "tipo": "textarea",
+            "words_min": 200,
+            "words_max": 400
           }
         ]
       },
@@ -392,7 +553,9 @@
             "clave": "ventaja",
             "etiqueta": "Ventaja competitiva argumentada",
             "ayuda": "",
-            "tipo": "textarea"
+            "tipo": "textarea",
+            "words_min": 120,
+            "words_max": 300
           }
         ]
       },
@@ -406,7 +569,9 @@
             "clave": "reflexion",
             "etiqueta": "Reflexión del equipo",
             "ayuda": "",
-            "tipo": "textarea"
+            "tipo": "textarea",
+            "words_min": 120,
+            "words_max": 300
           }
         ]
       }
@@ -438,132 +603,65 @@
       "≥4 estrategias FO/DO/FA/DA",
       "Ventaja competitiva argumentada",
       "Referencias incluidas"
-    ]
-  },
-  {
-    "id": "sondeo",
-    "numero": "Actividad previa",
-    "titulo": "Sondeo Digital con Google Forms + IA",
-    "objetivo": "Diseñar, aplicar y analizar un sondeo digital para obtener evidencia real del mercado que fortalezca decisiones del proyecto.",
-    "recupera": [
-      "Mercado objetivo preliminar",
-      "Hipótesis del modelo",
-      "Propuesta de valor"
     ],
-    "sections": [
+    "evidence_slots": [
       {
-        "titulo": "1. Diseño del sondeo",
-        "instructions": [
-          "Define claramente el objetivo.",
-          "Máximo 10 preguntas combinando cerradas (opción múltiple/Likert) y abiertas.",
-          "Las preguntas deben ser estratégicas y alineadas al proyecto."
+        "id": "google_trends",
+        "label": "Google Trends",
+        "description": "Gráficas/capturas seleccionadas y utilizadas en el análisis.",
+        "types": [
+          "image",
+          "pdf",
+          "link"
         ],
-        "fields": [
-          {
-            "clave": "objetivo_sondeo",
-            "etiqueta": "Objetivo del sondeo",
-            "ayuda": "",
-            "tipo": "textarea"
-          },
-          {
-            "clave": "preguntas",
-            "etiqueta": "Máximo 10 preguntas",
-            "ayuda": "",
-            "tipo": "textarea"
-          }
-        ]
+        "embed_images": true
       },
       {
-        "titulo": "2. Aplicación",
-        "instructions": [
-          "Aplica a una muestra de 25–50 personas.",
-          "El público debe ser coherente con el mercado objetivo."
+        "id": "sondeo_visual",
+        "label": "Resultados visuales del sondeo",
+        "description": "Gráficas, tablas o nube de palabras seleccionadas.",
+        "types": [
+          "image",
+          "pdf",
+          "link"
         ],
-        "fields": [
-          {
-            "clave": "muestra",
-            "etiqueta": "Muestra obtenida y características",
-            "ayuda": "",
-            "tipo": "textarea"
-          },
-          {
-            "clave": "link_form",
-            "etiqueta": "Enlace de Google Form",
-            "ayuda": "",
-            "tipo": "textarea"
-          }
-        ]
+        "embed_images": true
       },
       {
-        "titulo": "3. Análisis",
-        "instructions": [
-          "Descarga resultados en Excel/CSV.",
-          "Genera visualizaciones pertinentes.",
-          "IA puede apoyar a identificar patrones/tendencias, pero el equipo interpreta."
+        "id": "benchmark",
+        "label": "Benchmarking",
+        "description": "Tabla o matriz visual de comparación de competidores.",
+        "types": [
+          "image",
+          "pdf",
+          "link"
         ],
-        "fields": [
-          {
-            "clave": "resultados",
-            "etiqueta": "Resultados e insights",
-            "ayuda": "",
-            "tipo": "textarea"
-          },
-          {
-            "clave": "graficas",
-            "etiqueta": "Gráficas/tablas seleccionadas y qué muestran",
-            "ayuda": "",
-            "tipo": "textarea"
-          }
-        ]
+        "embed_images": true
       },
       {
-        "titulo": "4. Integración",
-        "instructions": [
-          "Responde qué validaron/invalidaron, qué ajustes requiere el modelo y qué decisiones estratégicas se derivan."
+        "id": "pestel",
+        "label": "Matriz PESTEL",
+        "description": "Matriz o infografía que complementa la argumentación escrita.",
+        "types": [
+          "image",
+          "pdf",
+          "link"
         ],
-        "fields": [
-          {
-            "clave": "validacion",
-            "etiqueta": "Qué se validó o invalidó",
-            "ayuda": "",
-            "tipo": "textarea"
-          },
-          {
-            "clave": "ajustes",
-            "etiqueta": "Ajustes al modelo",
-            "ayuda": "",
-            "tipo": "textarea"
-          },
-          {
-            "clave": "decisiones",
-            "etiqueta": "Decisiones estratégicas",
-            "ayuda": "",
-            "tipo": "textarea"
-          }
-        ]
+        "embed_images": true
+      },
+      {
+        "id": "foda",
+        "label": "Matriz FODA / FODA cruzada",
+        "description": "Matriz visual del diagnóstico y/o estrategias cruzadas.",
+        "types": [
+          "image",
+          "pdf",
+          "link"
+        ],
+        "embed_images": true
       }
     ],
-    "ia_si": [
-      "Identificar patrones",
-      "Detectar tendencias",
-      "Apoyar visualización/interpretación"
-    ],
-    "ia_no": [
-      "Sustituir la interpretación del equipo",
-      "Generar conclusiones sin relación con los datos",
-      "Ocultar el uso de IA"
-    ],
-    "checklist": [
-      "Objetivo claro",
-      "≤10 preguntas estratégicas",
-      "Muestra 25–50 y coherente",
-      "Resultados descargados",
-      "Visualizaciones incluidas",
-      "Insights no meramente descriptivos",
-      "Decisiones derivadas",
-      "Uso de IA declarado",
-      "Prompt utilizado registrado"
-    ]
+    "evidence_note": "La evidencia visual complementa el análisis; no sustituye la argumentación solicitada."
   },
   {
     "id": "mercadotecnia",
@@ -595,25 +693,33 @@
             "clave": "estudio_obj",
             "etiqueta": "Objetivo del estudio",
             "ayuda": "",
-            "tipo": "textarea"
+            "tipo": "textarea",
+            "words_min": 120,
+            "words_max": 300
           },
           {
             "clave": "metodologia",
             "etiqueta": "Metodología, población, muestra y limitaciones",
             "ayuda": "",
-            "tipo": "textarea"
+            "tipo": "textarea",
+            "words_min": 200,
+            "words_max": 400
           },
           {
             "clave": "secundarias",
             "etiqueta": "Fuentes secundarias",
             "ayuda": "",
-            "tipo": "textarea"
+            "tipo": "textarea",
+            "words_min": 120,
+            "words_max": 300
           },
           {
             "clave": "interpretacion",
             "etiqueta": "Resultados seleccionados e implicaciones",
             "ayuda": "",
-            "tipo": "textarea"
+            "tipo": "textarea",
+            "words_min": 200,
+            "words_max": 400
           }
         ]
       },
@@ -628,13 +734,17 @@
             "clave": "mercado_meta",
             "etiqueta": "Mercado meta / TAM-SAM-SOM",
             "ayuda": "",
-            "tipo": "textarea"
+            "tipo": "textarea",
+            "words_min": 200,
+            "words_max": 400
           },
           {
             "clave": "buyer",
             "etiqueta": "Buyer Persona validado",
             "ayuda": "",
-            "tipo": "textarea"
+            "tipo": "textarea",
+            "words_min": 200,
+            "words_max": 400
           }
         ]
       },
@@ -648,7 +758,9 @@
             "clave": "segmentacion",
             "etiqueta": "Variables de segmentación",
             "ayuda": "",
-            "tipo": "textarea"
+            "tipo": "textarea",
+            "words_min": 200,
+            "words_max": 400
           }
         ]
       },
@@ -663,7 +775,9 @@
             "clave": "producto",
             "etiqueta": "Estrategia de producto/servicio + evidencia",
             "ayuda": "",
-            "tipo": "textarea"
+            "tipo": "textarea",
+            "words_min": 200,
+            "words_max": 400
           }
         ]
       },
@@ -679,13 +793,17 @@
             "clave": "precio",
             "etiqueta": "Precio y estrategia",
             "ayuda": "",
-            "tipo": "textarea"
+            "tipo": "textarea",
+            "words_min": 120,
+            "words_max": 300
           },
           {
             "clave": "evidencia_precio",
             "etiqueta": "Evidencia/benchmark/disposición a pagar",
             "ayuda": "",
-            "tipo": "textarea"
+            "tipo": "textarea",
+            "words_min": 120,
+            "words_max": 300
           }
         ]
       },
@@ -700,13 +818,17 @@
             "clave": "plaza",
             "etiqueta": "Estrategia de distribución",
             "ayuda": "",
-            "tipo": "textarea"
+            "tipo": "textarea",
+            "words_min": 120,
+            "words_max": 300
           },
           {
             "clave": "costo_plaza",
             "etiqueta": "Costos estimados de canales",
             "ayuda": "",
-            "tipo": "textarea"
+            "tipo": "textarea",
+            "words_min": 120,
+            "words_max": 300
           }
         ]
       },
@@ -721,19 +843,25 @@
             "clave": "promocion",
             "etiqueta": "Comunicación Integrada de Mercadotecnia",
             "ayuda": "",
-            "tipo": "textarea"
+            "tipo": "textarea",
+            "words_min": 200,
+            "words_max": 400
           },
           {
             "clave": "plan_ventas",
             "etiqueta": "Planeación de medios / embudo / plan de ventas",
             "ayuda": "",
-            "tipo": "textarea"
+            "tipo": "textarea",
+            "words_min": 200,
+            "words_max": 400
           },
           {
             "clave": "presupuesto_mkt",
             "etiqueta": "Presupuesto de Mercadotecnia",
             "ayuda": "",
-            "tipo": "textarea"
+            "tipo": "textarea",
+            "words_min": 120,
+            "words_max": 300
           }
         ]
       },
@@ -749,13 +877,17 @@
             "clave": "servicio",
             "etiqueta": "Atención al cliente",
             "ayuda": "",
-            "tipo": "textarea"
+            "tipo": "textarea",
+            "words_min": 120,
+            "words_max": 300
           },
           {
             "clave": "posventa",
             "etiqueta": "Posventa y fidelización",
             "ayuda": "",
-            "tipo": "textarea"
+            "tipo": "textarea",
+            "words_min": 120,
+            "words_max": 300
           }
         ]
       },
@@ -770,7 +902,9 @@
             "clave": "branding",
             "etiqueta": "Branding y posicionamiento",
             "ayuda": "",
-            "tipo": "textarea"
+            "tipo": "textarea",
+            "words_min": 120,
+            "words_max": 300
           }
         ]
       }
@@ -802,7 +936,54 @@
       "Servicio/posventa",
       "Branding coherente",
       "Todo costo se prepara para Finanzas"
-    ]
+    ],
+    "evidence_slots": [
+      {
+        "id": "graficas_mercado",
+        "label": "Gráficas del estudio de mercado",
+        "description": "Resultados seleccionados que sustentan decisiones.",
+        "types": [
+          "image",
+          "pdf",
+          "link"
+        ],
+        "embed_images": true
+      },
+      {
+        "id": "buyer_persona",
+        "label": "Buyer Persona validado",
+        "description": "Infografía/perfil visual del Buyer Persona.",
+        "types": [
+          "image",
+          "pdf",
+          "link"
+        ],
+        "embed_images": true
+      },
+      {
+        "id": "branding",
+        "label": "Branding e identidad visual",
+        "description": "Logo, paleta y aplicaciones de identidad.",
+        "types": [
+          "image",
+          "pdf",
+          "link"
+        ],
+        "embed_images": true
+      },
+      {
+        "id": "plan_medios",
+        "label": "Plan de medios / ventas",
+        "description": "Tabla, cronograma o evidencia visual del plan.",
+        "types": [
+          "image",
+          "pdf",
+          "link"
+        ],
+        "embed_images": true
+      }
+    ],
+    "evidence_note": "La evidencia visual complementa el análisis; no sustituye la argumentación solicitada."
   },
   {
     "id": "operaciones",
@@ -833,7 +1014,9 @@
             "clave": "especificaciones",
             "etiqueta": "Especificaciones operativas",
             "ayuda": "",
-            "tipo": "textarea"
+            "tipo": "textarea",
+            "words_min": 120,
+            "words_max": 300
           }
         ]
       },
@@ -847,7 +1030,9 @@
             "clave": "proceso",
             "etiqueta": "Descripción del proceso",
             "ayuda": "",
-            "tipo": "textarea"
+            "tipo": "textarea",
+            "words_min": 200,
+            "words_max": 400
           }
         ]
       },
@@ -862,7 +1047,9 @@
             "clave": "core",
             "etiqueta": "CORE Process",
             "ayuda": "",
-            "tipo": "textarea"
+            "tipo": "textarea",
+            "words_min": 200,
+            "words_max": 400
           }
         ]
       },
@@ -876,7 +1063,9 @@
             "clave": "diagrama",
             "etiqueta": "Explicación del diagrama funcional",
             "ayuda": "",
-            "tipo": "textarea"
+            "tipo": "textarea",
+            "words_min": 120,
+            "words_max": 300
           }
         ]
       },
@@ -891,7 +1080,9 @@
             "clave": "cadena",
             "etiqueta": "Cadena de suministro",
             "ayuda": "",
-            "tipo": "textarea"
+            "tipo": "textarea",
+            "words_min": 200,
+            "words_max": 400
           }
         ]
       },
@@ -907,7 +1098,9 @@
             "clave": "proveedores",
             "etiqueta": "≥5 proveedores estratégicos y cotizaciones",
             "ayuda": "",
-            "tipo": "textarea"
+            "tipo": "textarea",
+            "words_min": 200,
+            "words_max": 400
           }
         ]
       },
@@ -923,7 +1116,9 @@
             "clave": "layout",
             "etiqueta": "Lay Out y justificación",
             "ayuda": "",
-            "tipo": "textarea"
+            "tipo": "textarea",
+            "words_min": 200,
+            "words_max": 400
           }
         ]
       },
@@ -938,13 +1133,17 @@
             "clave": "indicadores_op",
             "etiqueta": "3–5 indicadores",
             "ayuda": "",
-            "tipo": "textarea"
+            "tipo": "textarea",
+            "words_min": 120,
+            "words_max": 300
           },
           {
             "clave": "phva",
             "etiqueta": "Aplicación PHVA/PDCA",
             "ayuda": "",
-            "tipo": "textarea"
+            "tipo": "textarea",
+            "words_min": 120,
+            "words_max": 300
           }
         ]
       }
@@ -977,11 +1176,58 @@
       "3–5 indicadores",
       "PHVA aplicado",
       "Costos operativos identificados para Finanzas"
-    ]
+    ],
+    "evidence_slots": [
+      {
+        "id": "proceso",
+        "label": "Diagrama del CORE Process",
+        "description": "Diagrama de proceso o flujo funcional.",
+        "types": [
+          "image",
+          "pdf",
+          "link"
+        ],
+        "embed_images": true
+      },
+      {
+        "id": "proveedores",
+        "label": "Proveedores / cotizaciones",
+        "description": "Tabla, cotización o evidencia de proveedores.",
+        "types": [
+          "image",
+          "pdf",
+          "link"
+        ],
+        "embed_images": true
+      },
+      {
+        "id": "layout",
+        "label": "Lay Out",
+        "description": "Plano, esquema o representación del Lay Out.",
+        "types": [
+          "image",
+          "pdf",
+          "link"
+        ],
+        "embed_images": true
+      },
+      {
+        "id": "prototipo_op",
+        "label": "Evidencia operativa del prototipo",
+        "description": "Imagen o documento técnico pertinente.",
+        "types": [
+          "image",
+          "pdf",
+          "link"
+        ],
+        "embed_images": true
+      }
+    ],
+    "evidence_note": "La evidencia visual complementa el análisis; no sustituye la argumentación solicitada."
   },
   {
     "id": "talento",
-    "numero": "3 (se desarrolla después de 4 y 5)",
+    "numero": "6",
     "titulo": "Organización y Gestión del Talento",
     "objetivo": "Diseñar estructura y sistema básico de talento desde las necesidades reales del modelo, Mercadotecnia y Operaciones.",
     "recupera": [
@@ -1007,25 +1253,33 @@
             "clave": "areas",
             "etiqueta": "Funciones y áreas necesarias",
             "ayuda": "",
-            "tipo": "textarea"
+            "tipo": "textarea",
+            "words_min": 200,
+            "words_max": 400
           },
           {
             "clave": "tipo_estructura",
             "etiqueta": "Tipo de estructura + justificación + ventajas/limitaciones",
             "ayuda": "",
-            "tipo": "textarea"
+            "tipo": "textarea",
+            "words_min": 200,
+            "words_max": 400
           },
           {
             "clave": "organigrama",
             "etiqueta": "Explicación del organigrama",
             "ayuda": "",
-            "tipo": "textarea"
+            "tipo": "textarea",
+            "words_min": 200,
+            "words_max": 400
           },
           {
             "clave": "areas_desc",
             "etiqueta": "Descripción e interrelación de áreas",
             "ayuda": "",
-            "tipo": "textarea"
+            "tipo": "textarea",
+            "words_min": 200,
+            "words_max": 400
           }
         ]
       },
@@ -1042,13 +1296,17 @@
             "clave": "puestos",
             "etiqueta": "Puestos clave y conexión con procesos",
             "ayuda": "",
-            "tipo": "textarea"
+            "tipo": "textarea",
+            "words_min": 200,
+            "words_max": 400
           },
           {
             "clave": "outsourcing",
             "etiqueta": "Servicios externos / outsourcing",
             "ayuda": "",
-            "tipo": "textarea"
+            "tipo": "textarea",
+            "words_min": 120,
+            "words_max": 300
           }
         ]
       },
@@ -1065,13 +1323,17 @@
             "clave": "compensacion",
             "etiqueta": "Tabla/explicación de compensación",
             "ayuda": "",
-            "tipo": "textarea"
+            "tipo": "textarea",
+            "words_min": 200,
+            "words_max": 400
           },
           {
             "clave": "fuentes_salarios",
             "etiqueta": "Fuentes de investigación salarial",
             "ayuda": "",
-            "tipo": "textarea"
+            "tipo": "textarea",
+            "words_min": 80,
+            "words_max": 180
           }
         ]
       },
@@ -1086,7 +1348,9 @@
             "clave": "desempeno",
             "etiqueta": "Diseño del sistema/formato de evaluación",
             "ayuda": "",
-            "tipo": "textarea"
+            "tipo": "textarea",
+            "words_min": 120,
+            "words_max": 300
           }
         ]
       },
@@ -1102,13 +1366,17 @@
             "clave": "reglamento",
             "etiqueta": "Reglamento Interior adaptado",
             "ayuda": "",
-            "tipo": "textarea"
+            "tipo": "textarea",
+            "words_min": 200,
+            "words_max": 400
           },
           {
             "clave": "fuentes_laborales",
             "etiqueta": "Fuentes laborales oficiales",
             "ayuda": "",
-            "tipo": "textarea"
+            "tipo": "textarea",
+            "words_min": 80,
+            "words_max": 180
           }
         ]
       },
@@ -1123,13 +1391,17 @@
             "clave": "imss",
             "etiqueta": "Simulación / explicación IMSS",
             "ayuda": "",
-            "tipo": "textarea"
+            "tipo": "textarea",
+            "words_min": 120,
+            "words_max": 300
           },
           {
             "clave": "infonavit",
             "etiqueta": "Simulación / explicación INFONAVIT",
             "ayuda": "",
-            "tipo": "textarea"
+            "tipo": "textarea",
+            "words_min": 120,
+            "words_max": 300
           }
         ]
       },
@@ -1143,7 +1415,9 @@
             "clave": "declaracion_ia",
             "etiqueta": "Declaración de uso de IA",
             "ayuda": "",
-            "tipo": "textarea"
+            "tipo": "textarea",
+            "words_min": 120,
+            "words_max": 300
           }
         ]
       }
@@ -1176,11 +1450,57 @@
       "Costos de talento para Finanzas",
       "Declaración de IA",
       "Referencias APA 7"
-    ]
+    ],
+    "evidence_slots": [
+      {
+        "id": "organigrama",
+        "label": "Organigrama",
+        "description": "Organigrama formal del emprendimiento.",
+        "types": [
+          "image",
+          "pdf",
+          "link"
+        ],
+        "embed_images": true
+      },
+      {
+        "id": "puestos",
+        "label": "Descripciones completas de puestos",
+        "description": "Formatos de puestos para anexos.",
+        "types": [
+          "pdf",
+          "link"
+        ],
+        "embed_images": false
+      },
+      {
+        "id": "desempeno",
+        "label": "Formato de evaluación del desempeño",
+        "description": "Formato completo para anexos.",
+        "types": [
+          "image",
+          "pdf",
+          "link"
+        ],
+        "embed_images": true
+      },
+      {
+        "id": "imss_infonavit",
+        "label": "Simulaciones IMSS / INFONAVIT",
+        "description": "Evidencia académica de los procesos administrativos.",
+        "types": [
+          "image",
+          "pdf",
+          "link"
+        ],
+        "embed_images": true
+      }
+    ],
+    "evidence_note": "La evidencia visual complementa el análisis; no sustituye la argumentación solicitada."
   },
   {
     "id": "legal",
-    "numero": "6",
+    "numero": "7",
     "titulo": "Aspectos Legales, Fiscales y Propiedad Intelectual",
     "objetivo": "Definir requerimientos legales, fiscales y de PI necesarios para iniciar y operar formalmente, justificando figura jurídica, régimen fiscal y protección de activos intangibles.",
     "recupera": [
@@ -1207,19 +1527,25 @@
             "clave": "clasificacion",
             "etiqueta": "Clasificación MIPYME + fuente",
             "ayuda": "",
-            "tipo": "textarea"
+            "tipo": "textarea",
+            "words_min": 120,
+            "words_max": 300
           },
           {
             "clave": "figuras",
             "etiqueta": "Comparación de figuras jurídicas",
             "ayuda": "",
-            "tipo": "textarea"
+            "tipo": "textarea",
+            "words_min": 200,
+            "words_max": 400
           },
           {
             "clave": "figura_sel",
             "etiqueta": "Figura seleccionada + justificación",
             "ayuda": "",
-            "tipo": "textarea"
+            "tipo": "textarea",
+            "words_min": 120,
+            "words_max": 300
           }
         ]
       },
@@ -1235,19 +1561,25 @@
             "clave": "regimen",
             "etiqueta": "Régimen fiscal y justificación",
             "ayuda": "",
-            "tipo": "textarea"
+            "tipo": "textarea",
+            "words_min": 200,
+            "words_max": 400
           },
           {
             "clave": "obligaciones",
             "etiqueta": "Obligaciones fiscales",
             "ayuda": "",
-            "tipo": "textarea"
+            "tipo": "textarea",
+            "words_min": 200,
+            "words_max": 400
           },
           {
             "clave": "fuentes_fiscales",
             "etiqueta": "Fuentes oficiales + fecha de consulta",
             "ayuda": "",
-            "tipo": "textarea"
+            "tipo": "textarea",
+            "words_min": 80,
+            "words_max": 180
           }
         ]
       },
@@ -1263,7 +1595,9 @@
             "clave": "marca",
             "etiqueta": "Análisis de registro de marca",
             "ayuda": "",
-            "tipo": "textarea"
+            "tipo": "textarea",
+            "words_min": 120,
+            "words_max": 300
           }
         ]
       },
@@ -1281,19 +1615,25 @@
             "clave": "activos_pi",
             "etiqueta": "Inventario de activos protegibles",
             "ayuda": "",
-            "tipo": "textarea"
+            "tipo": "textarea",
+            "words_min": 120,
+            "words_max": 300
           },
           {
             "clave": "proteccion",
             "etiqueta": "Matriz activo → figura → dependencia → justificación",
             "ayuda": "",
-            "tipo": "textarea"
+            "tipo": "textarea",
+            "words_min": 120,
+            "words_max": 300
           },
           {
             "clave": "investigacion_pi",
             "etiqueta": "Investigación de figuras seleccionadas",
             "ayuda": "",
-            "tipo": "textarea"
+            "tipo": "textarea",
+            "words_min": 200,
+            "words_max": 400
           }
         ]
       },
@@ -1308,7 +1648,9 @@
             "clave": "riesgos_legales",
             "etiqueta": "3–5 riesgos legales y prevención",
             "ayuda": "",
-            "tipo": "textarea"
+            "tipo": "textarea",
+            "words_min": 120,
+            "words_max": 300
           }
         ]
       },
@@ -1323,7 +1665,9 @@
             "clave": "costos_legales",
             "etiqueta": "Costos legales/PI para Finanzas",
             "ayuda": "",
-            "tipo": "textarea"
+            "tipo": "textarea",
+            "words_min": 120,
+            "words_max": 300
           }
         ]
       },
@@ -1338,7 +1682,9 @@
             "clave": "fuentes_legales",
             "etiqueta": "Fuentes oficiales y fechas de consulta",
             "ayuda": "",
-            "tipo": "textarea"
+            "tipo": "textarea",
+            "words_min": 80,
+            "words_max": 180
           }
         ]
       }
@@ -1370,11 +1716,46 @@
       "3–5 riesgos legales",
       "Costos legales identificados para Finanzas",
       "Fuentes oficiales + fecha"
-    ]
+    ],
+    "evidence_slots": [
+      {
+        "id": "marca",
+        "label": "Marca / búsqueda / registro",
+        "description": "Evidencia de búsqueda, clasificación o trámite de marca.",
+        "types": [
+          "image",
+          "pdf",
+          "link"
+        ],
+        "embed_images": true
+      },
+      {
+        "id": "pi",
+        "label": "Propiedad Intelectual",
+        "description": "Matriz, evidencia o documentación de figuras de protección.",
+        "types": [
+          "image",
+          "pdf",
+          "link"
+        ],
+        "embed_images": true
+      },
+      {
+        "id": "tramites",
+        "label": "Trámites / requisitos legales",
+        "description": "Documentos o ligas de fuentes oficiales pertinentes.",
+        "types": [
+          "pdf",
+          "link"
+        ],
+        "embed_images": false
+      }
+    ],
+    "evidence_note": "La evidencia visual complementa el análisis; no sustituye la argumentación solicitada."
   },
   {
     "id": "finanzas",
-    "numero": "7",
+    "numero": "8",
     "titulo": "Plan Financiero",
     "objetivo": "Interpretar el Modelo Financiero en Excel relacionando presupuestos, costos, estados proyectados, indicadores y financiamiento con las decisiones de capítulos anteriores.",
     "recupera": [
@@ -1400,13 +1781,17 @@
             "clave": "presupuesto",
             "etiqueta": "Narrativa de inversión, costos y gastos",
             "ayuda": "",
-            "tipo": "textarea"
+            "tipo": "textarea",
+            "words_min": 200,
+            "words_max": 400
           },
           {
             "clave": "costeo",
             "etiqueta": "Resultados relevantes del costeo y relación precio–costo",
             "ayuda": "",
-            "tipo": "textarea"
+            "tipo": "textarea",
+            "words_min": 120,
+            "words_max": 300
           }
         ]
       },
@@ -1422,7 +1807,9 @@
             "clave": "estados",
             "etiqueta": "Interpretación de estados financieros proyectados",
             "ayuda": "",
-            "tipo": "textarea"
+            "tipo": "textarea",
+            "words_min": 200,
+            "words_max": 400
           }
         ]
       },
@@ -1438,7 +1825,9 @@
             "clave": "indicadores_fin",
             "etiqueta": "Indicadores: resultado → significado → interpretación → decisión",
             "ayuda": "",
-            "tipo": "textarea"
+            "tipo": "textarea",
+            "words_min": 200,
+            "words_max": 400
           }
         ]
       },
@@ -1455,19 +1844,25 @@
             "clave": "necesidad_fin",
             "etiqueta": "Necesidad de financiamiento",
             "ayuda": "",
-            "tipo": "textarea"
+            "tipo": "textarea",
+            "words_min": 120,
+            "words_max": 300
           },
           {
             "clave": "alternativas_fin",
             "etiqueta": "Comparación de ≥3 alternativas",
             "ayuda": "",
-            "tipo": "textarea"
+            "tipo": "textarea",
+            "words_min": 200,
+            "words_max": 400
           },
           {
             "clave": "seleccion_fin",
             "etiqueta": "Alternativa seleccionada + justificación",
             "ayuda": "",
-            "tipo": "textarea"
+            "tipo": "textarea",
+            "words_min": 120,
+            "words_max": 300
           }
         ]
       },
@@ -1483,7 +1878,9 @@
             "clave": "viabilidad",
             "etiqueta": "Argumentación de viabilidad financiera",
             "ayuda": "",
-            "tipo": "textarea"
+            "tipo": "textarea",
+            "words_min": 200,
+            "words_max": 400
           }
         ]
       }
@@ -1516,6 +1913,41 @@
       "Alternativa seleccionada",
       "Viabilidad argumentada",
       "Modelo financiero completo preparado como anexo"
-    ]
+    ],
+    "evidence_slots": [
+      {
+        "id": "modelo_financiero",
+        "label": "Modelo Financiero",
+        "description": "Archivo/evidencia del modelo financiero trabajado en clase.",
+        "types": [
+          "pdf",
+          "link"
+        ],
+        "embed_images": false
+      },
+      {
+        "id": "graficas_financieras",
+        "label": "Gráficas financieras seleccionadas",
+        "description": "Visualizaciones relevantes para interpretar resultados.",
+        "types": [
+          "image",
+          "pdf",
+          "link"
+        ],
+        "embed_images": true
+      },
+      {
+        "id": "financiamiento",
+        "label": "Alternativas de financiamiento",
+        "description": "Evidencias o referencias de alternativas analizadas.",
+        "types": [
+          "image",
+          "pdf",
+          "link"
+        ],
+        "embed_images": true
+      }
+    ],
+    "evidence_note": "La evidencia visual complementa el análisis; no sustituye la argumentación solicitada."
   }
 ]
