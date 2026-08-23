@@ -1240,7 +1240,7 @@
     ],
     "sections": [
       {
-        "titulo": "3.1 Estructura Organizacional",
+        "titulo": "6.1 Estructura Organizacional",
         "instructions": [
           "Identifica primero funciones/áreas necesarias.",
           "Aplica Estructura Mínima Viable.",
@@ -1284,7 +1284,7 @@
         ]
       },
       {
-        "titulo": "3.2 Funciones específicas por puesto",
+        "titulo": "6.2 Funciones específicas por puesto",
         "instructions": [
           "Define puestos indispensables.",
           "Incluye objetivo, responsabilidades, escolaridad, experiencia, competencias técnicas/blandas, relación jerárquica e indicadores.",
@@ -1311,7 +1311,7 @@
         ]
       },
       {
-        "titulo": "3.3 Sueldos y Salarios",
+        "titulo": "6.3 Sueldos y Salarios",
         "instructions": [
           "Investiga referencias reales de mercado; no inventes salarios.",
           "Incluye sueldo base, prestaciones, incentivos, salario emocional, costo mensual/anual.",
@@ -1338,7 +1338,7 @@
         ]
       },
       {
-        "titulo": "3.4 Evaluación del Desempeño",
+        "titulo": "6.4 Evaluación del Desempeño",
         "instructions": [
           "Diseña formato con metas, trabajo en equipo, responsabilidad, innovación y comunicación.",
           "Incluye observaciones, retroalimentación, metas de mejora y fecha de seguimiento."
@@ -1355,7 +1355,7 @@
         ]
       },
       {
-        "titulo": "3.5 Reglamento Interior de Trabajo",
+        "titulo": "6.5 Reglamento Interior de Trabajo",
         "instructions": [
           "Adáptalo al negocio y legislación vigente.",
           "Incluye horarios, conducta, recursos, disciplina, seguridad/higiene, permisos/vacaciones, inclusión/respeto y otros lineamientos pertinentes.",
@@ -1381,7 +1381,7 @@
         ]
       },
       {
-        "titulo": "3.6 Anexos legales y administrativos",
+        "titulo": "6.6 Anexos legales y administrativos",
         "instructions": [
           "Simula alta patronal IMSS y trámite/registro INFONAVIT.",
           "Debe demostrar comprensión del propósito/proceso y evitar datos personales reales innecesarios."
