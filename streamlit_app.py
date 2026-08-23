@@ -201,7 +201,7 @@ if st.session_state.auth_type=="staff":
                     p=one("projects",team_id=tm["id"]); payload=(p or {}).get("payload") or {"modulos":{}}; v=global_pct(payload); c1,c2,c3=st.columns([3,2,1]); c1.write(f"**{tm['team_code']} · {tm['team_name']}**"); c1.caption(p["project_name"] if p else "Sin proyecto"); c2.progress(v/100); c2.caption(f"{v}% · {(p or {}).get('updated_at','')}")
                     if c3.button("Nuevo PIN",key=f"pinreset_{tm['id']}"): st.success(f"Nuevo PIN: {reset_team_pin(tm['id'])}")
         st.stop()
-st.stop()
+
 # TEAM AREA
 team=st.session_state.auth_team; project=st.session_state.auth_project; payload=project.get("payload") or {"modulos":{}}; payload.setdefault("modulos",{})
 group=one("groups",id=team["group_id"]); teacher=one("app_users",id=group["teacher_id"]) if group else None
