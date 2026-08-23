@@ -121,7 +121,10 @@ def render_evidence_list(pid,mid,allow_delete=False,key_prefix="ev"):
         if ev["kind"]=="link": c1.markdown(f"🔗 **{ev['slot_label']}** — {ev.get('external_url','')}")
         else:
             u=signed_url(ev.get("storage_path")); label=ev.get("file_name") or ev["slot_label"]
-            c1.markdown(f"📎 **{ev['slot_label']}** — [{label}]({u})") if u else c1.write(f"📎 **{ev['slot_label']}** — {label}")
+           if u:
+               c1.markdown(f"📎 **{ev['slot_label']}** — [{label}]({u})")
+           else:
+               c1.write(f"📎 **{ev['slot_label']}** — {label}")
         if allow_delete and c2.button("Eliminar",key=f"{key_prefix}_{ev['id']}"): delete_evidence(ev); st.rerun()
 
 def render_evidence_uploader(pid,m):
@@ -149,7 +152,11 @@ def render_evidence_uploader(pid,m):
             for ev in evs:
                 if ev["kind"]=="link": st.markdown(f"🔗 {ev.get('external_url','')}")
                 else:
-                    u=signed_url(ev.get("storage_path")); st.markdown(f"📎 [{ev.get('file_name','Archivo')}]({u})") if u else st.write(f"📎 {ev.get('file_name','Archivo')}")
+                    u = signed_url(ev.get("storage_path"))
+                    if u:
+                        st.markdown(f"📎 [{ev.get('file_name','Archivo')}]({u})")
+                    else:
+                        st.write(f"📎 {ev.get('file_name','Archivo')}")
                 if st.button("Eliminar evidencia",key=f"del_{ev['id']}"): delete_evidence(ev); st.rerun()
 
 # DOCX
