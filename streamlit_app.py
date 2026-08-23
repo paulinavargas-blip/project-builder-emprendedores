@@ -202,6 +202,7 @@ if st.session_state.auth_type=="staff":
                     if c3.button("Nuevo PIN",key=f"pinreset_{tm['id']}"): st.success(f"Nuevo PIN: {reset_team_pin(tm['id'])}")
         st.stop()
 
+        st.stop()
 # TEAM AREA
 team=st.session_state.auth_team; project=st.session_state.auth_project; payload=project.get("payload") or {"modulos":{}}; payload.setdefault("modulos",{})
 group=one("groups",id=team["group_id"]); teacher=one("app_users",id=group["teacher_id"]) if group else None
