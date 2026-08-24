@@ -1926,7 +1926,8 @@
         "description": "Modelo Financiero completo trabajado en clase, con presupuestos, costeo, estados financieros proyectados, indicadores y análisis de financiamiento.",
         "types": [
           "pdf",
-          "link"
+          "link",
+          "xlsx"
         ],
         "embed_images": false
       },
