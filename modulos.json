@@ -248,7 +248,7 @@
         "embed_images": true
       }
     ],
-    "evidence_note": "La evidencia visual complementa el análisis; no sustituye la argumentación solicitada."
+    "evidence_note": "Las tablas, matrices, gráficas, diagramas, formatos y demás productos visuales completos deberán cargarse en Evidencias y anexos. En los campos de desarrollo presenta únicamente su explicación, análisis, interpretación o justificación."
   },
   {
     "id": "planeacion",
@@ -661,7 +661,7 @@
         "embed_images": true
       }
     ],
-    "evidence_note": "La evidencia visual complementa el análisis; no sustituye la argumentación solicitada."
+    "evidence_note": "Las tablas, matrices, gráficas, diagramas, formatos y demás productos visuales completos deberán cargarse en Evidencias y anexos. En los campos de desarrollo presenta únicamente su explicación, análisis, interpretación o justificación."
   },
   {
     "id": "mercadotecnia",
@@ -983,7 +983,7 @@
         "embed_images": true
       }
     ],
-    "evidence_note": "La evidencia visual complementa el análisis; no sustituye la argumentación solicitada."
+    "evidence_note": "Las tablas, matrices, gráficas, diagramas, formatos y demás productos visuales completos deberán cargarse en Evidencias y anexos. En los campos de desarrollo presenta únicamente su explicación, análisis, interpretación o justificación."
   },
   {
     "id": "operaciones",
@@ -1223,7 +1223,7 @@
         "embed_images": true
       }
     ],
-    "evidence_note": "La evidencia visual complementa el análisis; no sustituye la argumentación solicitada."
+    "evidence_note": "Las tablas, matrices, gráficas, diagramas, formatos y demás productos visuales completos deberán cargarse en Evidencias y anexos. En los campos de desarrollo presenta únicamente su explicación, análisis, interpretación o justificación."
   },
   {
     "id": "talento",
@@ -1286,15 +1286,15 @@
       {
         "titulo": "6.2 Funciones específicas por puesto",
         "instructions": [
-          "Define puestos indispensables.",
-          "Incluye objetivo, responsabilidades, escolaridad, experiencia, competencias técnicas/blandas, relación jerárquica e indicadores.",
-          "Conexión obligatoria: Puesto → Función → CORE Process/actividad crítica → Resultado.",
-          "Distingue fundadores, empleados y servicios externos."
+          "Identifica y explica los puestos indispensables para la operación del negocio.",
+"Justifica su relación con la estructura organizacional y distingue fundadores, empleados y servicios externos.",
+"Explica la conexión Puesto → Función → CORE Process/actividad crítica → Resultado.",
+"Las descripciones completas de puestos (objetivo, responsabilidades, escolaridad, experiencia, competencias, relación jerárquica e indicadores) deberán cargarse en Evidencias y anexos."
         ],
         "fields": [
           {
             "clave": "puestos",
-            "etiqueta": "Puestos clave y conexión con procesos",
+            "etiqueta": "Explicación de puestos clave y conexión con procesos",
             "ayuda": "",
             "tipo": "textarea",
             "words_min": 200,
@@ -1316,12 +1316,13 @@
           "Investiga referencias reales de mercado; no inventes salarios.",
           "Incluye sueldo base, prestaciones, incentivos, salario emocional, costo mensual/anual.",
           "Justifica equidad interna, motivación y mercado laboral.",
-          "Todo costo debe pasar a Finanzas."
+          "Todo costo debe pasar a Finanzas.",
+          "La tabla completa de sueldos, prestaciones, incentivos, salario emocional y costo mensual/anual deberá cargarse en Evidencias y anexos."
         ],
         "fields": [
           {
             "clave": "compensacion",
-            "etiqueta": "Tabla/explicación de compensación",
+            "etiqueta": "Explicación y justificación de la compensación",
             "ayuda": "",
             "tipo": "textarea",
             "words_min": 200,
@@ -1341,12 +1342,13 @@
         "titulo": "6.4 Evaluación del Desempeño",
         "instructions": [
           "Diseña formato con metas, trabajo en equipo, responsabilidad, innovación y comunicación.",
-          "Incluye observaciones, retroalimentación, metas de mejora y fecha de seguimiento."
+          "Incluye observaciones, retroalimentación, metas de mejora y fecha de seguimiento.",
+          "El formato completo de evaluación del desempeño deberá cargarse en Evidencias y anexos; en este apartado explica y justifica su diseño."
         ],
         "fields": [
           {
             "clave": "desempeno",
-            "etiqueta": "Diseño del sistema/formato de evaluación",
+            "etiqueta": "Explicación y justificación del diseño de evaluación",
             "ayuda": "",
             "tipo": "textarea",
             "words_min": 120,
@@ -1359,12 +1361,13 @@
         "instructions": [
           "Adáptalo al negocio y legislación vigente.",
           "Incluye horarios, conducta, recursos, disciplina, seguridad/higiene, permisos/vacaciones, inclusión/respeto y otros lineamientos pertinentes.",
-          "Verifica información jurídica y cita APA 7."
+          "Verifica información jurídica y cita APA 7.",
+          "El Reglamento Interior de Trabajo completo deberá cargarse en Evidencias y anexos; en este apartado explica y justifica su adaptación a las características del negocio."
         ],
         "fields": [
           {
             "clave": "reglamento",
-            "etiqueta": "Reglamento Interior adaptado",
+            "etiqueta": "Explicación y justificación del Reglamento Interior",
             "ayuda": "",
             "tipo": "textarea",
             "words_min": 200,
@@ -1383,13 +1386,14 @@
       {
         "titulo": "6.6 Anexos legales y administrativos",
         "instructions": [
-          "Simula alta patronal IMSS y trámite/registro INFONAVIT.",
-          "Debe demostrar comprensión del propósito/proceso y evitar datos personales reales innecesarios."
+          "Explica el proceso de alta patronal y registro de trabajadores ante el IMSS, así como el proceso correspondiente ante INFONAVIT.",
+          "Describe los pasos, requisitos, finalidad y obligaciones principales, demostrando comprensión del proceso y evitando datos personales reales innecesarios.",
+          "Las evidencias de los procesos realizados deberán cargarse en Evidencias y anexos; en estos campos presenta únicamente su explicación."
         ],
         "fields": [
           {
             "clave": "imss",
-            "etiqueta": "Simulación / explicación IMSS",
+            "etiqueta": "Explicación del proceso de alta y registro ante IMSS",
             "ayuda": "",
             "tipo": "textarea",
             "words_min": 120,
@@ -1397,30 +1401,15 @@
           },
           {
             "clave": "infonavit",
-            "etiqueta": "Simulación / explicación INFONAVIT",
+            "etiqueta": "Explicación del proceso ante INFONAVIT",
             "ayuda": "",
             "tipo": "textarea",
             "words_min": 120,
             "words_max": 300
           }
-        ]
-      },
-      {
-        "titulo": "Declaración de IA",
-        "instructions": [
-          "Registra herramienta + propósito + aportación concreta + qué validó/modificó el equipo."
         ],
-        "fields": [
-          {
-            "clave": "declaracion_ia",
-            "etiqueta": "Declaración de uso de IA",
-            "ayuda": "",
-            "tipo": "textarea",
-            "words_min": 120,
-            "words_max": 300
-          }
-        ]
       }
+  
     ],
     "ia_si": [
       "Analizar CORE Process para funciones/puestos",
@@ -1448,7 +1437,7 @@
       "Reglamento adaptado y sustentado",
       "IMSS e INFONAVIT simulados",
       "Costos de talento para Finanzas",
-      "Declaración de IA",
+      
       "Referencias APA 7"
     ],
     "evidence_slots": [
@@ -1494,9 +1483,20 @@
           "link"
         ],
         "embed_images": true
-      }
-    ],
-    "evidence_note": "La evidencia visual complementa el análisis; no sustituye la argumentación solicitada."
+      },
+    {
+  "id": "compensacion",
+  "label": "Tabla de sueldos y compensación",
+  "description": "Tabla completa de sueldos, prestaciones, incentivos, salario emocional y costo mensual/anual.",
+  "types": [
+    "image",
+    "pdf",
+    "link"
+  ],
+  "embed_images": true
+},
+],
+    "evidence_note": "Las evidencias y anexos concentran los formatos, tablas, documentos y materiales de soporte solicitados en este módulo; los campos de desarrollo se utilizan para explicar, analizar y justificar las decisiones del equipo."
   },
   {
     "id": "legal",
@@ -1516,16 +1516,17 @@
     ],
     "sections": [
       {
-        "titulo": "6.1 Constitución de la empresa",
+        "titulo": "7.1 Constitución de la empresa",
         "instructions": [
           "Clasifica micro/pequeña/mediana con fuente oficial vigente.",
           "Compara alternativas legales antes de seleccionar.",
-          "Considera socios, actividad, responsabilidad, inversión, administración, crecimiento, financiamiento, riesgo y tamaño."
+          "Considera socios, actividad, responsabilidad, inversión, administración, crecimiento, financiamiento, riesgo y tamaño.",
+          "La matriz o tabla comparativa completa de figuras jurídicas deberá cargarse en Evidencias y anexos; en este apartado explica y justifica la clasificación de la empresa y la figura jurídica seleccionada."
         ],
         "fields": [
           {
             "clave": "clasificacion",
-            "etiqueta": "Clasificación MIPYME + fuente",
+            "etiqueta": "Explicación y justificación de la clasificación MIPYME",
             "ayuda": "",
             "tipo": "textarea",
             "words_min": 120,
@@ -1533,33 +1534,27 @@
           },
           {
             "clave": "figuras",
-            "etiqueta": "Comparación de figuras jurídicas",
+            "etiqueta": "Justificación de la figura jurídica seleccionada",
             "ayuda": "",
             "tipo": "textarea",
             "words_min": 200,
             "words_max": 400
-          },
-          {
-            "clave": "figura_sel",
-            "etiqueta": "Figura seleccionada + justificación",
-            "ayuda": "",
-            "tipo": "textarea",
-            "words_min": 120,
-            "words_max": 300
           }
+          
         ]
       },
       {
-        "titulo": "6.2 Régimen Fiscal",
+        "titulo": "7.2 Régimen Fiscal",
         "instructions": [
           "Investiga régimen pertinente a figura y actividad.",
           "Explica obligaciones, facturación, declaraciones, registros, impuestos y obligaciones con trabajadores.",
-          "Verifica prioritariamente en fuente oficial y registra fecha de consulta."
+          "Verifica prioritariamente en fuente oficial y registra fecha de consulta.",
+          "Las tablas, comparativos, constancias o evidencias documentales relacionadas con el régimen fiscal deberán cargarse en Evidencias y anexos; en este apartado explica y justifica el régimen seleccionado y sus principales obligaciones."
         ],
         "fields": [
           {
             "clave": "regimen",
-            "etiqueta": "Régimen fiscal y justificación",
+            "etiqueta": "Explicación y justificación del régimen fiscal seleccionado",
             "ayuda": "",
             "tipo": "textarea",
             "words_min": 200,
@@ -1567,7 +1562,7 @@
           },
           {
             "clave": "obligaciones",
-            "etiqueta": "Obligaciones fiscales",
+            "etiqueta": "Explicación de las principales obligaciones fiscales",
             "ayuda": "",
             "tipo": "textarea",
             "words_min": 200,
@@ -1584,16 +1579,17 @@
         ]
       },
       {
-        "titulo": "6.3 Registro de Marcas",
+        "titulo": "7.3 Registro de Marcas",
         "instructions": [
           "Conecta con Branding.",
           "Investiga autoridad, protección, procedimiento, clasificación, requisitos, costo vigente, vigencia/renovación y riesgo de usar marca sin verificar disponibilidad.",
-          "Prioriza IMPI."
+          "Prioriza IMPI.",
+          "El análisis, búsqueda de disponibilidad, clasificación y evidencias del proceso de registro de marca deberán cargarse en Evidencias y anexos; en este apartado explica y justifica la estrategia de protección seleccionada."
         ],
         "fields": [
           {
             "clave": "marca",
-            "etiqueta": "Análisis de registro de marca",
+            "etiqueta": "Explicación y justificación de la estrategia de protección de marca",
             "ayuda": "",
             "tipo": "textarea",
             "words_min": 120,
@@ -1602,18 +1598,19 @@
         ]
       },
       {
-        "titulo": "6.4 PI: patentes, modelos de utilidad y derechos de autor",
+        "titulo": "7.4 PI: patentes, modelos de utilidad y derechos de autor",
         "instructions": [
           "Primero inventaría activos realmente protegibles.",
           "No todos los proyectos requieren patente.",
           "Selecciona figura por activo y justifica.",
           "Investiga qué protege/no protege, autoridad, requisitos, procedimiento, costo, tiempo, vigencia y beneficio estratégico.",
-          "Prioriza IMPI e INDAUTOR según corresponda."
+          "Prioriza IMPI e INDAUTOR según corresponda.",
+          "La matriz de activos protegibles y las evidencias documentales deberán cargarse en Evidencias y anexos; en este apartado explica y justifica la estrategia de protección seleccionada."
         ],
         "fields": [
           {
             "clave": "activos_pi",
-            "etiqueta": "Inventario de activos protegibles",
+            "etiqueta": "Explicación de los activos identificados como protegibles",
             "ayuda": "",
             "tipo": "textarea",
             "words_min": 120,
@@ -1621,7 +1618,7 @@
           },
           {
             "clave": "proteccion",
-            "etiqueta": "Matriz activo → figura → dependencia → justificación",
+            "etiqueta": "Justificación de la estrategia de protección seleccionada",
             "ayuda": "",
             "tipo": "textarea",
             "words_min": 120,
@@ -1629,7 +1626,7 @@
           },
           {
             "clave": "investigacion_pi",
-            "etiqueta": "Investigación de figuras seleccionadas",
+            "etiqueta": "Análisis de las figuras de protección seleccionadas",
             "ayuda": "",
             "tipo": "textarea",
             "words_min": 200,
@@ -1638,15 +1635,16 @@
         ]
       },
       {
-        "titulo": "Riesgos legales",
+        "titulo": "7.5 Riesgos legales",
         "instructions": [
           "Identifica 3–5 riesgos prioritarios.",
-          "Incluye probabilidad, impacto, acción preventiva y dependencia/normativa relacionada."
+          "Incluye probabilidad, impacto, acción preventiva y dependencia/normativa relacionada.",
+          "La matriz completa de riesgos legales deberá cargarse en Evidencias y anexos; en este apartado explica y justifica los riesgos prioritarios y las acciones preventivas propuestas."
         ],
         "fields": [
           {
             "clave": "riesgos_legales",
-            "etiqueta": "3–5 riesgos legales y prevención",
+           "etiqueta": "Análisis y justificación de los riesgos legales prioritarios",
             "ayuda": "",
             "tipo": "textarea",
             "words_min": 120,
@@ -1655,15 +1653,16 @@
         ]
       },
       {
-        "titulo": "Costos legales y de protección",
+        "titulo": "7.6 Costos legales y de protección",
         "instructions": [
           "Todo desembolso debe identificarse para incorporarse a Finanzas.",
-          "Registra concepto, dependencia/proveedor, costo, inicial/recurrente y momento requerido."
+          "Registra concepto, dependencia/proveedor, costo, inicial/recurrente y momento requerido.",
+          "La tabla completa de costos legales y de protección deberá cargarse en Evidencias y anexos; en este apartado explica y justifica los costos principales y su incorporación al Plan Financiero."
         ],
         "fields": [
           {
             "clave": "costos_legales",
-            "etiqueta": "Costos legales/PI para Finanzas",
+            "etiqueta": "Explicación y justificación de los costos legales y de protección",
             "ayuda": "",
             "tipo": "textarea",
             "words_min": 120,
@@ -1672,7 +1671,7 @@
         ]
       },
       {
-        "titulo": "Fuentes",
+        "titulo": "7.7 Fuentes oficiales y referencias",
         "instructions": [
           "La IA no es fuente jurídica/fiscal definitiva.",
           "Verifica datos legales, fiscales, costos, requisitos y vigencias en fuentes oficiales."
@@ -1680,7 +1679,7 @@
         "fields": [
           {
             "clave": "fuentes_legales",
-            "etiqueta": "Fuentes oficiales y fechas de consulta",
+            "etiqueta": "Fuentes oficiales consultadas y fecha de consulta",
             "ayuda": "",
             "tipo": "textarea",
             "words_min": 80,
@@ -1707,15 +1706,15 @@
     ],
     "checklist": [
       "Clasificación MIPYME sustentada",
-      "Figuras jurídicas comparadas",
-      "Figura seleccionada",
-      "Régimen fiscal investigado",
-      "Marca analizada",
-      "Inventario de activos PI",
-      "Figura de protección justificada",
-      "3–5 riesgos legales",
-      "Costos legales identificados para Finanzas",
-      "Fuentes oficiales + fecha"
+      "Figura jurídica seleccionada y justificada",
+      
+      "Régimen fiscal seleccionado y justificado",
+      "Estrategia de protección de marca justificada",
+      "Activos de propiedad intelectual identificados",
+      "Estrategia de protección de PI justificada",
+      "Riesgos legales prioritarios analizados",
+      "Costos legales y de protección identificados para Finanzas",
+      "Fuentes oficiales consultadas y fecha de consulta"
     ],
     "evidence_slots": [
       {
@@ -1732,7 +1731,7 @@
       {
         "id": "pi",
         "label": "Propiedad Intelectual",
-        "description": "Matriz, evidencia o documentación de figuras de protección.",
+        "description": "Matriz de activos protegibles, figuras de protección seleccionadas y evidencias documentales.",
         "types": [
           "image",
           "pdf",
@@ -1742,8 +1741,8 @@
       },
       {
         "id": "tramites",
-        "label": "Trámites / requisitos legales",
-        "description": "Documentos o ligas de fuentes oficiales pertinentes.",
+        "label": "Anexos legales, fiscales y administrativos",
+        "description": "Tablas, matrices, comparativos, costos, trámites y documentos de soporte de los apartados 7.1, 7.2, 7.5 y 7.6.",
         "types": [
           "pdf",
           "link"
@@ -1751,7 +1750,7 @@
         "embed_images": false
       }
     ],
-    "evidence_note": "La evidencia visual complementa el análisis; no sustituye la argumentación solicitada."
+    "evidence_note": "Las evidencias y anexos complementan el análisis y concentran las tablas, matrices, comparativos, documentos y materiales de soporte solicitados; no sustituyen la explicación y justificación desarrollada en cada apartado."
   },
   {
     "id": "finanzas",
@@ -1769,17 +1768,19 @@
     ],
     "sections": [
       {
-        "titulo": "7.1 Elaboración de presupuestos",
+        "titulo": "8.1 Elaboración de presupuestos",
         "instructions": [
           "Explica cuánto dinero requiere el negocio para iniciar/operar.",
           "Integra inversión, activos, tecnología, inventario, insumos, nómina, renta, mercadotecnia, legal, software, administración, capital de trabajo y otros pertinentes.",
           "Los números deben provenir de decisiones justificadas en capítulos anteriores.",
-          "Recupera el costeo y analiza relación precio–costo."
+          "Recupera el costeo y analiza relación precio–costo.",
+          "El presupuesto y los cálculos financieros completos deberán integrarse en el Modelo Financiero en Excel y cargarse en Evidencias y anexos; en este apartado explica, analiza y justifica las principales decisiones financieras."
         ],
+        
         "fields": [
           {
             "clave": "presupuesto",
-            "etiqueta": "Narrativa de inversión, costos y gastos",
+            "etiqueta": "Explicación y justificación de la inversión, costos y gastos",
             "ayuda": "",
             "tipo": "textarea",
             "words_min": 200,
@@ -1787,7 +1788,7 @@
           },
           {
             "clave": "costeo",
-            "etiqueta": "Resultados relevantes del costeo y relación precio–costo",
+            "etiqueta": "Análisis del costeo y de la relación precio-costo",
             "ayuda": "",
             "tipo": "textarea",
             "words_min": 120,
@@ -1796,11 +1797,12 @@
         ]
       },
       {
-        "titulo": "7.2 Estados financieros proyectados",
+        "titulo": "8.2 Estados financieros proyectados",
         "instructions": [
           "No copies todas las tablas de Excel.",
           "Interpreta ventas, costos, gastos, utilidad/pérdida, efectivo, activos, pasivos, capital y evolución.",
-          "Usa lógica: Dato → explicación → causa → implicación."
+          "Usa lógica: Dato → explicación → causa → implicación.",
+          "Los estados financieros proyectados y sus cálculos completos deberán permanecer en el Modelo Financiero en Excel y cargarse en Evidencias y anexos; en este apartado interpreta sus resultados y explica sus implicaciones para el negocio."
         ],
         "fields": [
           {
@@ -1814,11 +1816,12 @@
         ]
       },
       {
-        "titulo": "7.3 Indicadores financieros",
+        "titulo": "8.3 Indicadores financieros",
         "instructions": [
           "Usa solo indicadores efectivamente calculados en el modelo de clase.",
           "Para cada uno: resultado, significado, interpretación, fortaleza/riesgo y decisión.",
-          "No agregues indicadores inventados por IA."
+          "No agregues indicadores inventados por IA.",
+          "Los cálculos de los indicadores deberán permanecer en el Modelo Financiero en Excel; en este apartado interpreta los resultados y explica las decisiones que se derivan de ellos."
         ],
         "fields": [
           {
@@ -1832,17 +1835,18 @@
         ]
       },
       {
-        "titulo": "7.4 Sistemas de financiamiento",
+        "titulo": "8.4 Sistemas de financiamiento",
         "instructions": [
           "Define monto, momento, uso y capacidad de asumir financiamiento.",
           "Compara al menos 3 alternativas reales o razonablemente accesibles.",
           "Incluye monto posible, costo/condiciones, ventajas, riesgos y viabilidad.",
-          "Selecciona alternativa y justifica."
+          "Selecciona alternativa y justifica.",
+          "La comparación detallada de alternativas, tasas, condiciones, plazos y cálculos deberá integrarse en el Modelo Financiero en Excel y cargarse en Evidencias y anexos; en este apartado explica y justifica la necesidad de financiamiento y la alternativa seleccionada."
         ],
         "fields": [
           {
             "clave": "necesidad_fin",
-            "etiqueta": "Necesidad de financiamiento",
+            "etiqueta": "Explicación y justificación de la necesidad de financiamiento",
             "ayuda": "",
             "tipo": "textarea",
             "words_min": 120,
@@ -1850,7 +1854,7 @@
           },
           {
             "clave": "alternativas_fin",
-            "etiqueta": "Comparación de ≥3 alternativas",
+            "etiqueta": "Análisis comparativo de al menos 3 alternativas de financiamiento",
             "ayuda": "",
             "tipo": "textarea",
             "words_min": 200,
@@ -1858,7 +1862,7 @@
           },
           {
             "clave": "seleccion_fin",
-            "etiqueta": "Alternativa seleccionada + justificación",
+            "etiqueta": "Selección y justificación de la alternativa de financiamiento",
             "ayuda": "",
             "tipo": "textarea",
             "words_min": 120,
@@ -1872,11 +1876,12 @@
           "Responde si es viable bajo los supuestos utilizados.",
           "Identifica fortalezas, riesgos, variables sensibles, condiciones necesarias y decisiones a modificar.",
           "El modelo debe mostrar bajo qué condiciones funciona, no solo intentar demostrar que sí funciona."
+          "La conclusión deberá sustentarse en los resultados obtenidos en el Modelo Financiero en Excel; en este apartado interpreta integralmente los resultados y emite una conclusión argumentada sobre la viabilidad financiera del proyecto."
         ],
         "fields": [
           {
             "clave": "viabilidad",
-            "etiqueta": "Argumentación de viabilidad financiera",
+            "etiqueta": "Conclusión y argumentación de la viabilidad financiera del proyecto",
             "ayuda": "",
             "tipo": "textarea",
             "words_min": 200,
@@ -1904,7 +1909,7 @@
       "Concluir sin datos reales"
     ],
     "checklist": [
-      "Modelo Excel trabajado",
+      "Modelo Financiero en Excel completo y trabajado",
       "Costos de capítulos previos integrados",
       "Costeo interpretado",
       "Estados financieros interpretados",
@@ -1912,13 +1917,13 @@
       "≥3 alternativas de financiamiento",
       "Alternativa seleccionada",
       "Viabilidad argumentada",
-      "Modelo financiero completo preparado como anexo"
+      "Modelo Financiero en Excel cargado en Evidencias y anexos"
     ],
     "evidence_slots": [
       {
         "id": "modelo_financiero",
-        "label": "Modelo Financiero",
-        "description": "Archivo/evidencia del modelo financiero trabajado en clase.",
+        "label": "Modelo Financiero en Excel",
+        "description": "Modelo Financiero completo trabajado en clase, con presupuestos, costeo, estados financieros proyectados, indicadores y análisis de financiamiento.",
         "types": [
           "pdf",
           "link"
@@ -1948,6 +1953,6 @@
         "embed_images": true
       }
     ],
-    "evidence_note": "La evidencia visual complementa el análisis; no sustituye la argumentación solicitada."
+    "evidence_note": "El Modelo Financiero en Excel y las evidencias complementarias sustentan el análisis; no sustituyen la interpretación y argumentación solicitadas en cada apartado."
   }
 ]
