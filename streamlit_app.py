@@ -12,7 +12,7 @@ from supabase import create_client
 BASE=Path(__file__).parent
 with open(BASE/"modulos.json",encoding="utf-8") as f: MODULES=json.load(f)
 BUCKET="project-evidence"; MAX_FILE_MB=10
-ALLOWED_MIME={"image/png","image/jpeg","application/pdf"}
+ALLOWED_MIME={"image/png","image/jpeg","application/pdf","application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"}
 
 st.set_page_config(page_title="Project Builder | Desarrollo de Emprendedores",page_icon="🚀",layout="wide",initial_sidebar_state="expanded")
 st.markdown("""<style>
@@ -95,7 +95,7 @@ def add_link_evidence(pid,mid,slot,url):
     db.table("evidences").insert({"project_id":pid,"module_id":mid,"slot_id":slot["id"],"slot_label":slot["label"],"kind":"link","external_url":url.strip(),"uploaded_at":utc_now()}).execute()
 def upload_file_evidence(pid,mid,slot,up):
     mime=up.type or mimetypes.guess_type(up.name)[0] or "application/octet-stream"; raw=up.getvalue()
-    if mime not in ALLOWED_MIME: raise ValueError("Solo se permiten PNG, JPG/JPEG o PDF.")
+    if mime not in ALLOWED_MIME: raise ValueError("Solo se permiten PNG, JPG/JPEG, PDF o Excel (.xlsx).")
     if len(raw)>MAX_FILE_MB*1024*1024: raise ValueError(f"El archivo excede {MAX_FILE_MB} MB.")
     ext=Path(up.name).suffix.lower()
     path=f"{pid}/{mid}/{slot['id']}/{int(datetime.now().timestamp())}_{secrets.token_hex(4)}_{safe_name(Path(up.name).stem)}{ext}"
@@ -154,8 +154,8 @@ def render_evidence_uploader(pid,m):
     for slot in m["evidence_slots"]:
         with st.expander(f"➕ {slot['label']}",expanded=False):
             st.caption(slot["description"]); allowed=slot["types"]
-            if "image" in allowed or "pdf" in allowed:
-                accepted=(["png","jpg","jpeg"] if "image" in allowed else [])+(["pdf"] if "pdf" in allowed else [])
+            if "image" in allowed or "pdf" in allowed or "xlsx" in allowed:
+                accepted=(["png","jpg","jpeg"] if "image" in allowed else [])+(["pdf"] if "pdf" in allowed else [])+(["xlsx"] if "xlsx" in allowed else [])
                 up=st.file_uploader(f"Subir archivo ({', '.join(accepted).upper()})",type=accepted,key=f"up_{pid}_{m['id']}_{slot['id']}")
                 if st.button("Guardar archivo",key=f"upbtn_{pid}_{m['id']}_{slot['id']}"):
                     if not up: st.warning("Selecciona un archivo primero.")
