@@ -1494,7 +1494,7 @@
     "link"
   ],
   "embed_images": true
-},
+}
 ],
     "evidence_note": "Las evidencias y anexos concentran los formatos, tablas, documentos y materiales de soporte solicitados en este módulo; los campos de desarrollo se utilizan para explicar, analizar y justificar las decisiones del equipo."
   },
@@ -1875,7 +1875,7 @@
         "instructions": [
           "Responde si es viable bajo los supuestos utilizados.",
           "Identifica fortalezas, riesgos, variables sensibles, condiciones necesarias y decisiones a modificar.",
-          "El modelo debe mostrar bajo qué condiciones funciona, no solo intentar demostrar que sí funciona."
+          "El modelo debe mostrar bajo qué condiciones funciona, no solo intentar demostrar que sí funciona.",
           "La conclusión deberá sustentarse en los resultados obtenidos en el Modelo Financiero en Excel; en este apartado interpreta integralmente los resultados y emite una conclusión argumentada sobre la viabilidad financiera del proyecto."
         ],
         "fields": [
