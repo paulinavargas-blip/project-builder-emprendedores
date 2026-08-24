@@ -94,6 +94,18 @@ def add_link_evidence(pid,mid,slot,url):
     if p.scheme not in ("http","https") or not p.netloc: raise ValueError("La liga debe comenzar con http:// o https://")
     db.table("evidences").insert({"project_id":pid,"module_id":mid,"slot_id":slot["id"],"slot_label":slot["label"],"kind":"link","external_url":url.strip(),"uploaded_at":utc_now()}).execute()
 def upload_file_evidence(pid,mid,slot,up):
+    existing = (
+        db.table("evidences")
+        .select("id")
+        .eq("project_id", pid)
+        .eq("module_id", mid)
+        .eq("slot_id", slot["id"])
+        .eq("file_name", up.name)
+        .execute()
+        .data
+    )
+    if existing:
+        raise ValueError("Este archivo ya fue cargado en este apartado.")
     mime=up.type or mimetypes.guess_type(up.name)[0] or "application/octet-stream"; raw=up.getvalue()
     if mime not in ALLOWED_MIME: raise ValueError("Solo se permiten PNG, JPG/JPEG, PDF o Excel (.xlsx).")
     if len(raw)>MAX_FILE_MB*1024*1024: raise ValueError(f"El archivo excede {MAX_FILE_MB} MB.")
